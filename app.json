@@ -1,14 +1,14 @@
 {
     "name": "Kuttus",
-    "description": " Whatsapp bot.",
+    "description": " wa bot.",
     "keywords": [
-        "whatsapp",
+        "wa",
         "bot"
     ],
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
-            "description": "Enter whatsapp web session.",
+            "description": "Enter wa web session.(scan chythapo kitye code)",
             "required": true
         },
         "SUDO": {
@@ -18,12 +18,12 @@
         "HANDLERS": {
             "description": "enter prefix.",
             "required": true,
-            "value": "^[.]"
+            "value": "^[#.]"
         },
         "SEND_READ": {
             "description": "send read receipt.",
-            "required": false,
-            "value": "true"
+            "required": true,
+            "value": "false"
         },
         "HEROKU": {
             "description": "Enable heroku features",
@@ -31,11 +31,11 @@
             "value": "true"
         },
         "HEROKU_API_KEY": {
-            "description": "Enter Heroku API Key.",
+            "description": "Enter Heroku API Key.(REQUIRESD)",
             "required": true
         },
         "HEROKU_APP_NAME": {
-            "description": "Enter Heroku APP Name.",
+            "description": "Enter Heroku APP Name.(melil the same name)",
             "required": true
         },
         "DEBUG": {
